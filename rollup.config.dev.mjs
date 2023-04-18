@@ -19,7 +19,7 @@ export default {
         file: './dist/game.js',
         name: 'MyGame',
         format: 'iife',
-        sourcemap: true
+        sourcemap: false
     },
 
     plugins: [
@@ -51,7 +51,7 @@ export default {
                 'node_modules/phaser/src/polyfills/requestAnimationFrame.js',
                 'node_modules/phaser/src/phaser-esm.js'
             ],
-            sourceMap: true,
+            sourceMap: false,
             ignoreGlobal: true
         }),
 
