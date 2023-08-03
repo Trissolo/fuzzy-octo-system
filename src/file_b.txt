@@ -1,0 +1,61 @@
+Second...
+(
+git reset --hard origin/master
+
+$ git reset --hard HEAD       (going back to HEAD)
+
+$ git reset --hard HEAD^      (going back to the commit before HEAD)
+$ git reset --hard HEAD~1     (equivalent to "^")
+
+$ git reset --hard HEAD~2     (going back two commits before HEAD)
+
+git push -f <remote-name> <branch-name>
+)
+
+Local branches:
+
+git branch
+
+Remote branches
+git branch -r
+
+-------------------------
+
+1) fork and clone
+
+
+2) Check current branch:
+$ git status
+On branch master
+
+
+$  git branch 
+* main
+
+3) create and move to a new branch:
+$ git checkout -b "test/branch-something"
+Switched to a new branch 'test/branch-something'
+
+	
+4) do stuff and commit:
+$  git commit -m "New 'file_a'"
+
+
+5) Push (first time)
+$  git push --set-upstream origin test/branch-something 
+
+5b) push (Second...)
+$ git push -u origin test/branch-something 
+
+
+
+6) Switch back to the main branch by command to switch between branches.
+
+$ git branch 
+  main
+* test/branch-something
+
+
+$ git checkout main
+
+-------------------------
